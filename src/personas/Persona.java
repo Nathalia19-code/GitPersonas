@@ -9,7 +9,7 @@ import java.util.regex.Pattern;
 public class Persona {
 
     private String dni;
-    private String nombre;
+    private String nom;
     private String apellidos;
     private int edad;
 
@@ -25,7 +25,7 @@ public class Persona {
      */
     public Persona(String dni, String nombre, String apellidos, int edad) {
         this.dni = dni;
-        this.nombre = nombre;
+        this.nom = nombre;
         this.apellidos = apellidos;
         this.edad = edad;
     }
@@ -67,7 +67,7 @@ public class Persona {
      * Devuelve el nombre
      */
     public String getNombre() {
-        return nombre;
+        return nom;
     }
 
     /**
@@ -75,7 +75,7 @@ public class Persona {
      * @param nombre
      */
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.nom = nombre;
     }
 
     /**
@@ -149,7 +149,7 @@ public class Persona {
      */
     public void imprime() {
         System.out.println("DNI: " + this.dni);
-        System.out.println("Nombre: " + this.nombre);
+        System.out.println("Nombre: " + this.nom);
         System.out.println("Apellidos: " + this.apellidos);
         System.out.println("Edad: " + this.edad);
     }
@@ -159,7 +159,7 @@ public class Persona {
      */
     @Override
     public String toString(){
-    	return "Persona{" + "nombre=" + this.nombre + ", apellidos=" + this.apellidos + ", dni=" + this.dni + ", edad=" + this.edad + '}';
+    	return "Persona{" + "nombre=" + this.nom + ", apellidos=" + this.apellidos + ", dni=" + this.dni + ", edad=" + this.edad + '}';
     }
     
     
